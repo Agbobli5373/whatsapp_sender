@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WhatsApp Message Sender</title>
+    <link rel="shortcut icon" href="img/whatsapp.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Isaac Ayuba" />
+    <meta
+      name="description"
+      content="send WhatsApp message without saving mobile no"
+    />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/3a02e35b76.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body >
+    <nav class="navbar navbar bg-secondary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="img/whatsapp.png" /> WhatsApp Message Sender</a
+        >
+        <div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="darkSwitch">
+  <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+</div>
+      </div>
+      
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto mt-3">
+          <div class="text-center mt-4 ">
+            <h3>About</h3>
+            <p>
+              Here you can send WhatsApp message without saving mobile no. You
+              have to enter mobile no and country code of who you went to send
+              message. it will redirect to your whatsApp application.
+            </p>
+          </div>
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend" style="width: 75px;">
+                    <input
+                      type="tel"
+                      class="form-control numberOnly"
+                      name="code"
+                      id="code"
+                      placeholder="+233"
+                      maxlength="4"
+                      minlength="2"
+                      value="+233"
+                      required
+                    />
+                  </div>
+                  <input
+                    type="tel"
+                    class="form-control numberOnly"
+                    name="phone"
+                    id="phone"
+                    pattern="[0-9]*"
+                    placeholder="0540xxxx24"
+                    maxlength="10"
+                    minlength="10"
+                    autofocus
+                    required
+                  />
+                </div>
+                <div style="color: red;" id="code-error"></div>
+                <div style="color: red;" id="phone-error"></div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="text"
+                  class="form-control"
+                  id="text"
+                  rows="5"
+                  placeholder="Message (optional)"
+                ></textarea>
+              </div>
+              <a href="#" class="btn btn-success" id="send" target="_blank"
+                >Send</a
+              >
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+       <div class="footer-container" style="margin-top:15px; 
+  text-align: center;">
+              
+        <div>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="https://wa.me/233540218724" target="_blank" class="fa fa-whatsapp"></a>
+        </div>
+        <div >
+        Developed by Isaac Ayuba
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- custome script -->
+    <script src="js/main.js"></script>
+    <script src="js/dark-mode-switch.min.js"></script>
+  </body>
+</html>
